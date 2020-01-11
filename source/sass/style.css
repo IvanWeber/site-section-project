@@ -63,10 +63,6 @@ body {
   display: flex;
   background: #f8f9fc;
 }
-.main__section {
-  color: green;
-  font-size: 30px;
-}
 
 .progress-bar {
   background: url("../img/ellipse-active.svg") 0 4px no-repeat, url("../img/ellipse-rest.svg") 435px 4px no-repeat, url("../img/ellipse-rest.svg") 870px 4px no-repeat, url("../img/ellipse-rest.svg") 1305px 4px no-repeat, url("../img/line.svg") 0 9px no-repeat;
@@ -100,10 +96,12 @@ body {
 
 .cashback {
   width: 640px;
+  background-color: #ffffff;
 }
 
 .company-data {
   width: 640px;
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

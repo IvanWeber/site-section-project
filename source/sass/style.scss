@@ -66,10 +66,6 @@ body {
 .main {
   display: flex;
   background: #f8f9fc;
-  &__section {
-    color: green;
-    font-size: 30px;
-  }
 }
 
 .progress-bar {
@@ -107,8 +103,10 @@ body {
 
 .cashback {
   width: 640px;
+  background-color: #ffffff;
 }
 
 .company-data {
   width: 640px;
+  background-color: #ffffff;
 }
