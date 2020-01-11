@@ -101,12 +101,134 @@ body {
   margin-right: 258px;
 }
 
+.main__info-input {
+  display: flex;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 1320px;
+}
+
 .cashback {
+  display: flex;
+  flex-wrap: wrap;
   width: 640px;
+  min-height: 760px;
   background-color: #ffffff;
+  margin-right: 40px;
+  border: 1px solid #f1f3f8;
+  box-sizing: border-box;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+
+  &__heading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 136.56%;
+    text-transform: uppercase;
+    color: #acb1c1;
+    margin-top: 27px;
+    margin-left: 38px;
+    border-bottom: 1px solid #acb1c1;
+    height: 40px;
+    width: 560px;
+  }
+
+  &__info-big {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 132.83%;
+  }
+
+  &__info-small {
+    font-size: 13px;
+    line-height: 133.21%;
+    color: #9098ad;
+  }
+
+  &__info-detail-1 {
+    font-size: 18px;
+    line-height: 135.09%;
+    color: #616773;
+  }
+
+  &__info-detail-2 {
+    font-size: 18px;
+    line-height: 135.09%;
+    color: #616773;
+  }
+
+  &__set-cashback {
+    font-size: 18px;
+    line-height: 151.3%;
+    color: #ffffff;
+    background-color: #4c82ff;
+  }
+
+  &__watch-presentation {
+    font-size: 18px;
+    line-height: 151.3%;
+    color: #467bf6;
+  }
+
+  &__user-agreement-label {
+    font-size: 13px;
+    line-height: 133.21%;
+    color: #9098ad;
+  }
 }
 
 .company-data {
+  display: flex;
+  flex-wrap: wrap;
   width: 640px;
+  min-height: 760px;
   background-color: #ffffff;
+  border: 1px solid #f1f3f8;
+  box-sizing: border-box;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+
+  &__heading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 136.56%;
+    text-transform: uppercase;
+    color: #acb1c1;
+  }
+
+  &__info-big {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 132.83%;
+  }
+
+  &__info-small {
+    font-size: 18px;
+    line-height: 151.3%;
+    color: #616773;
+  }
+
+  &__company-name-label {
+    font-size: 18px;
+    line-height: 151.3%;
+    color: #9098ad;
+  }
+
+  &__company-address-input {
+    font-size: 18px;
+    line-height: 151.3%;
+    color: #9098ad;
+  }
+
+  &__submit-button {
+    font-size: 18px;
+    line-height: 151.3%;
+    color: #ffffff;
+    background-color: #4c82ff;
+  }
 }
