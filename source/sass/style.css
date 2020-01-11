@@ -40,14 +40,70 @@ body {
   box-sizing: inherit;
 }
 
-h1 {
-  color: red;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1560px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  background: #f8f9fc;
+}
 .main__section {
   color: green;
-  font-weight: 900;
   font-size: 30px;
+}
+
+.progress-bar {
+  background: url("../img/ellipse-active.svg") 0 4px no-repeat, url("../img/ellipse-rest.svg") 435px 4px no-repeat, url("../img/ellipse-rest.svg") 870px 4px no-repeat, url("../img/ellipse-rest.svg") 1305px 4px no-repeat, url("../img/line.svg") 0 9px no-repeat;
+  display: flex;
+  width: 1320px;
+  min-height: 100px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.progress-bar__item {
+  width: 412px;
+  margin-top: 44px;
+  margin-right: 240px;
+}
+.progress-bar__item-heading {
+  font-size: 16px;
+  margin-bottom: 11px;
+  line-height: 135.09%;
+  color: #838486;
+}
+.progress-bar__item-par {
+  font-size: 13px;
+  line-height: 133.21%;
+  color: #B1B1B4;
+}
+
+.cashback-item {
+  margin-right: 258px;
+}
+
+.cashback {
+  width: 640px;
+}
+
+.company-data {
+  width: 640px;
 }
 
 /*# sourceMappingURL=style.css.map */
