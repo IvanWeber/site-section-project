@@ -59,6 +59,10 @@ body {
   overflow: hidden;
 }
 
+.span-bold {
+  font-weight: 900;
+}
+
 .main {
   display: flex;
   background: #f8f9fc;
@@ -107,6 +111,7 @@ body {
 .cashback {
   display: flex;
   flex-wrap: wrap;
+  align-content: start;
   width: 640px;
   min-height: 760px;
   background-color: #ffffff;
@@ -126,49 +131,138 @@ body {
   margin-top: 27px;
   margin-left: 38px;
   border-bottom: 1px solid #acb1c1;
-  height: 40px;
+  height: 44px;
   width: 560px;
 }
+.cashback__info-common {
+  background: url(../img/cash.svg) 27px 15px no-repeat, url(../img/cash-circle.svg) 7px 0px no-repeat;
+  min-height: 75px;
+  padding-left: 112px;
+  margin-top: 27px;
+  margin-left: 88px;
+}
 .cashback__info-big {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 900;
   line-height: 132.83%;
+  margin-bottom: 12px;
 }
 .cashback__info-small {
-  font-size: 13px;
+  font-size: 11px;
   line-height: 133.21%;
   color: #9098ad;
 }
 .cashback__info-detail-1 {
-  font-size: 18px;
-  line-height: 135.09%;
+  letter-spacing: 0.001em;
+  font-size: 16px;
+  line-height: 171%;
   color: #616773;
+  width: 512px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 124px;
 }
 .cashback__info-detail-2 {
-  font-size: 18px;
-  line-height: 135.09%;
+  letter-spacing: 0.001em;
+  font-size: 16px;
+  line-height: 171%;
   color: #616773;
+  width: 512px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
 }
 .cashback__set-cashback {
   font-size: 18px;
   line-height: 151.3%;
   color: #ffffff;
   background-color: #4c82ff;
+  margin-top: 47px;
+  margin-left: 63px;
+  padding: 11px 71px 10px 24px;
+  border: 0;
+  border-radius: 23px;
+  position: relative;
+  cursor: pointer;
+}
+.cashback__set-cashback::after {
+  content: url("../img/set-arrow.svg");
+  position: absolute;
+  top: 6px;
+  right: 5px;
+}
+.cashback__set-cashback:hover {
+  background-color: #416fd9;
+}
+.cashback__set-cashback:active {
+  background-color: #3340ff;
 }
 .cashback__watch-presentation {
   font-size: 18px;
   line-height: 151.3%;
   color: #467bf6;
+  background-color: #f8f9fc;
+  margin-top: 47px;
+  margin-left: 19px;
+  padding-left: 24px;
+  padding-right: 27px;
+  border: 0;
+  border-radius: 23px;
+  cursor: pointer;
+}
+.cashback__watch-presentation:hover {
+  background-color: #416fd9;
+  color: #ffffff;
+}
+.cashback__watch-presentation:active {
+  background-color: #3340ff;
+  color: #ffffff;
+}
+.cashback__user-agreement {
+  margin-top: 31px;
+  margin-left: 103px;
 }
 .cashback__user-agreement-label {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 133.21%;
   color: #9098ad;
+  position: relative;
+}
+.cashback__user-agreement-input + .cashback__user-agreement-label::before {
+  content: url("../img/checkbox-rest.svg");
+  position: absolute;
+  top: 17px;
+  left: -35px;
+}
+.cashback__user-agreement-input:active + .cashback__user-agreement-label::before {
+  content: url("../img/checkbox-active.svg");
+  position: absolute;
+  top: 17px;
+  left: -35px;
+}
+.cashback__user-agreement-input:checked:active + .cashback__user-agreement-label::before {
+  content: url("../img/checkbox-active.svg");
+  position: absolute;
+  top: 17px;
+  left: -35px;
+}
+.cashback__user-agreement-input:checked + .cashback__user-agreement-label::before {
+  content: url("../img/checkbox-checked.svg");
+  position: absolute;
+  top: 17px;
+  left: -35px;
+}
+.cashback__user-agreement-link {
+  font-size: 12px;
+  line-height: 133.21%;
+  color: #9098ad;
+  text-decoration: underline;
 }
 
 .company-data {
   display: flex;
   flex-wrap: wrap;
+  align-content: start;
   width: 640px;
   min-height: 760px;
   background-color: #ffffff;
@@ -184,9 +278,18 @@ body {
   line-height: 136.56%;
   text-transform: uppercase;
   color: #acb1c1;
+  margin-top: 27px;
+  margin-left: 38px;
+  border-bottom: 1px solid #acb1c1;
+  height: 44px;
+  width: 560px;
+}
+.company-data__common {
+  margin-top: 27px;
+  margin-left: 199px;
 }
 .company-data__info-big {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 900;
   line-height: 132.83%;
 }
