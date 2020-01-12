@@ -197,6 +197,7 @@ body {
     border-radius: 23px;
     position: relative;
     cursor: pointer;
+    box-shadow: 0px 16.9257px 16.9257px rgba(45, 102, 235, 0.13), 0px 4.23142px 8.46285px rgba(45, 105, 235, 0.12), 0px -2.11571px 5.28928px rgba(76, 132, 255, 0.05);git
   }
 
   &__set-cashback::after {
@@ -321,24 +322,80 @@ body {
     font-size: 26px;
     font-weight: 900;
     line-height: 132.83%;
+    margin-top: 27px;
+    margin-left: 40px;
   }
 
   &__info-small {
-    font-size: 18px;
+    margin-top: 13px;
+    margin-left: 39px;
+    font-size: 16px;
     line-height: 151.3%;
     color: #616773;
+    letter-spacing: 0.001px;
+  }
+
+  &__form {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   &__company-name-label {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 151.3%;
+    letter-spacing: 0.001px;
     color: #9098ad;
+    margin-top: 128px;
+    margin-left: 37px;
+    order: 0;
+    position: relative;
+  }
+
+  &__company-name-label::after {
+    content: url("../img/input-indicator.svg");
+    position: absolute;
+    top: 211%;
+    left: 89.5%;
+  }
+
+  &__company-name-input {
+    border: 0;
+    border-bottom: 2px solid #d5d7dc;
+    margin-top: 41px;
+    margin-left: 38px;
+    width: 88%;
+    position: relative;
+    order: 1;
+  }
+
+  &__company-address-label {
+    font-size: 16px;
+    line-height: 151.3%;
+    letter-spacing: 0.001px;
+    color: #9098ad;
+    position: relative;
+    margin-top: 97px;
+    margin-left: 38px;
+    order: 2;
+  }
+
+  &__company-address-label::after {
+    content: url("../img/input-indicator.svg");
+    position: absolute;
+    top: 211%;
+    left: 89.5%;
   }
 
   &__company-address-input {
-    font-size: 18px;
-    line-height: 151.3%;
-    color: #9098ad;
+    border: 0;
+    border-bottom: 2px solid #d5d7dc;
+    margin-top: 41px;
+    margin-left: 38px;
+    width: 88%;
+    position: relative;
+    order: 3;
   }
 
   &__submit-button {
@@ -346,5 +403,22 @@ body {
     line-height: 151.3%;
     color: #ffffff;
     background-color: #4c82ff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 68px;
+    padding: 11px 167px 9px 22px;
+    border: 0;
+    border-radius: 23px;
+    position: relative;
+    box-shadow: 0px 16.9257px 16.9257px rgba(45, 102, 235, 0.13), 0px 4.23142px 8.46285px rgba(45, 105, 235, 0.12), 0px -2.11571px 5.28928px rgba(76, 132, 255, 0.05);
+    order: 4;
+
+  }
+
+  &__submit-button::after {
+    content: url("../img/set-arrow.svg");
+    position: absolute;
+    left: 237px;
+    top: 6px;
   }
 }
