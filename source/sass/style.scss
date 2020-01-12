@@ -411,8 +411,18 @@ body {
     border-radius: 23px;
     position: relative;
     box-shadow: 0px 16.9257px 16.9257px rgba(45, 102, 235, 0.13), 0px 4.23142px 8.46285px rgba(45, 105, 235, 0.12), 0px -2.11571px 5.28928px rgba(76, 132, 255, 0.05);
+    cursor: pointer;
     order: 4;
+  }
 
+  &__submit-button:hover {
+    background-color: #416fd9;
+    border: 0;
+  }
+
+  &__submit-button:active {
+    background-color: #3340ff;
+    border: 0;
   }
 
   &__submit-button::after {
